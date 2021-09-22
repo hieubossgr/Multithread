@@ -1,0 +1,17 @@
+- Chạy project ở lớp main.java
+- Lớp QuickSort.java là lớp dùng để sắp xếp mảng số
+  - Mảng số sử dụng kiểu dữ liệu List<Integer> và sử dùng phương thức Collections.sort để sắp xếp
+  - Lớp này nhận đối số là danh sách các số mà ta đọc được ở file input.txt và 2 giá trị "left" và "right" với ý nghĩa muốn sắp xếp mảng từ vị trí left đến right
+- Lớp Merger.java là lớp dùng để gộp 2 mảng đã so sánh vào thành 1
+  - Lớp nhận đối số là 2 mảng số kiểu dữ liệu List<Integer>
+  - Sử dụng thuật toán sắp xếp trộn để gộp 2 mảng lại
+- Lớp config.java là lớp config bao gồm:
+  - Số Thread: Hiện tại đang để là 5
+  - Sử dụng newFixedThreadPool để thao tác với các luông
+  - Khời tạo 2 file đặt tên là "in" và "out" tương ứng với 2 file "input.txt" và "output.txt"
+- Ý tưởng thực hiện:
+  - Sau khi đọc file input.txt xong ta lưu dữ liệu của file vào "list" với kiểu dữ liệu List<Integer>
+  - Sắp xếp "list":
+    - Sort list bằng cách chia mảng list thành n mảng list với n là số luồng và thực hiện sort các mảng đồng thời được thực hiện trong lớp QuickSort
+    - Sau khi sắp xếp các mảng xong ta thực hiện "trộn" các mảng lại. Được thực hiện trong lớp Merger
+  - Cuối cùng là ghi vào file output.txt
