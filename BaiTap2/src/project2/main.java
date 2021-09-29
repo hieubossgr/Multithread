@@ -84,7 +84,7 @@ public class main extends config{
             if(i==n) right = list.size() - 1;
             else right = left + lengthOfChildArray - 1;
             results.add(exc.submit(new QuickSort(list, left, right)));
-            System.out.println(pool.getActiveCount());
+            //System.out.println(pool.getActiveCount());
         }
     }
 

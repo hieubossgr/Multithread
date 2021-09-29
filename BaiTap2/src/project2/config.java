@@ -18,7 +18,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @author hieub
  */
 public class config {
-    protected static int n = 5;
+    protected static int n = 10;
     protected static  ExecutorService exc = Executors.newFixedThreadPool(n);
     protected static  ThreadPoolExecutor pool = (ThreadPoolExecutor)exc;
     protected static  ArrayList<Future<List<Integer>>> results = new ArrayList<>();
