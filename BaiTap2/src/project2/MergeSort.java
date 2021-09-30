@@ -25,7 +25,7 @@ public class MergeSort implements Callable<List<Integer>>{
     private static List<Integer> merge(){
         List<Integer> ansList = new ArrayList<>();
         
-        int i=0, j=0, k=0;
+        int i=0, j=0;
         int length1 = list1.size(), length2 = list2.size();
         while(i<length1 && j<length2) {
             if(list1.get(i) < list2.get(j)) ansList.add(list1.get(i++));

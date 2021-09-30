@@ -33,6 +33,4 @@ public class QuickSort implements Callable<List<Integer>>{
         Collections.sort(ansList);
         return ansList;
     }
-    
-    
 }
