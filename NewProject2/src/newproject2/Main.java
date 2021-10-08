@@ -23,14 +23,12 @@ import java.util.Random;
  *
  * @author hieub
  */
-public class Main {
+public class Main extends Config{
 
     /**
      * @param args the command line arguments
      */
-    private static int n = 3;
-    private static File input = new File("input.txt");
-    private static File output = new File("output.txt");
+    
     
     public static int[] readFile(File file) throws IOException {
         long timeRead = System.currentTimeMillis();
